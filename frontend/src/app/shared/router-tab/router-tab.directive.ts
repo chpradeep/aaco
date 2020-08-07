@@ -5,6 +5,6 @@ import { RouterLink } from '@angular/router';
 @Directive({
   selector: 'mat-tab[routerLink]'
 })
-export class RouterTabDirective {
+export class RouterTab {
   constructor(public tab: MatTab, public link: RouterLink) {}
 }

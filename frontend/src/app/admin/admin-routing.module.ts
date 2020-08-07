@@ -11,7 +11,7 @@ const routes: Routes = [
     children: [
       {
         path: '',
-        redirectTo: 'mat-grid'
+        redirectTo: 'dashboard'
       },
       ...childRoutes
     ]

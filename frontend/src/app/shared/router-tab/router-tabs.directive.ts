@@ -8,15 +8,15 @@ import {
 import { MatTabGroup } from '@angular/material/tabs';
 import { Subscription } from 'rxjs';
 import { NavigationEnd, Router } from '@angular/router';
-import { RouterTabDirective } from './router-tab.directive';
+import { RouterTab } from './router-tab.directive';
 
 @Directive({
   selector: '[routerTabs]'
 })
-export class RouterTabsDirective implements AfterContentInit, OnDestroy {
+export class RouterTabs implements AfterContentInit, OnDestroy {
   subscription = new Subscription();
 
-  @ContentChildren(RouterTabDirective) routerTabs: QueryList<RouterTabDirective>;
+  @ContentChildren(RouterTab) routerTabs: QueryList<RouterTab>;
 
   constructor(private host: MatTabGroup, private router: Router) {}
 
